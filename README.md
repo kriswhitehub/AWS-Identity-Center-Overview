@@ -47,3 +47,29 @@ Extra Credit Modules
 * [Using an external IDP (Okta) with Identity Center](https://catalog.workshops.aws/iam-identity-center/en-US/workshop/4-extracredits/4-externalidp-okta)
 * [Using an external IDP (Azure AD) with Identity Center](https://catalog.workshops.aws/iam-identity-center/en-US/workshop/4-extracredits/4-externalidp-azure)
 * [Using an external IDP (Ping Federate) with Identity Center](https://catalog.workshops.aws/iam-identity-center/en-US/workshop/4-extracredits/4-externalidp-ping)
+
+
+##### IAM Identity Center Instance Types
+
+IAM Identity Center now offers two deployment types, the traditional [organization instance](https://docs.aws.amazon.com/singlesignon/latest/userguide/organization-instances-identity-center.html) and an [account instance](https://docs.aws.amazon.com/singlesignon/latest/userguide/account-instances-identity-center.html), shown in Figure 1. In this section, we show you the differences between the two.
+ ![IAM-Identity-Center-instance-types](images/IAM-Identity-Center-instance-types.png)
+
+
+##### [Use Case Diagrams](https://aws.amazon.com/blogs/security/how-to-use-multiple-instances-of-aws-iam-identity-center/)
+
+
+##### IAM Identity Center instances deployment patterns
+Case 1 (recommended): An organization instance can support multiple AWS managed applications in different accounts. Creation of account instances is disabled after you have an organization instance. 
+![Case1](images/Case1.png)
+ 
+
+Case 2: An AWS Organizations deployment without an organization instance can create multiple account instances, one per account, to support AWS managed applications in the same account.
+![Case2](images/Case2.png)
+ 
+
+Case 3: An account instance in a standalone account (not in AWS Organizations) can support AWS managed applications in the same account.
+![Case3](images/Case3.png)
+ 
+Case 4: An AWS Organizations deployment with an organization instance can invite in a standalone account that had an account instance prior to being added to the organization.
+![Case4](images/Case4.png)
+
