@@ -1,4 +1,4 @@
-### AWS Identity Center Overview
+![AWSIdentityCenterLogo](images/awsidentitycenter.jpg)
 
 
 ###### AWS IAM Identity Center: 
