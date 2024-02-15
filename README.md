@@ -1,7 +1,7 @@
 ![AWSIdentityCenterLogo](images/awsidentitycenter.jpg)
 
 
-###### AWS IAM Identity Center: 
+##### AWS IAM Identity Center: 
 
 * (successor to AWS Single Sign-On) is a cloud-based identity and access management (IAM) service that helps you centrally manage and control access to your AWS resources.
 
